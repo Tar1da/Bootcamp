@@ -1,0 +1,133 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+   background-color: grey;
+   font-family: 'Caveat', cursive;
+   background-image: url(/img/Фон\ номер\ 3.png);
+   background-size: cover;
+}
+header{
+   padding: 30px;
+   display: flex;
+   justify-content: flex-end;
+}
+.header__btn-prev{
+   height: 70px;
+   width: 70px;
+   font-size: 50px;
+   color: white;
+   border: solid 2px white;
+   border-radius: 70px;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   background-color: #350C23;
+   transition: 0.4s;
+}
+.header__btn-prev:hover{
+   background-color: rgba(255,255,255,0.3);
+   color: rgb(59,19,90);
+   font-size: 60px;
+   transition: 0.2s;
+}
+.header__title{
+   flex-grow: 1;
+   text-align: center;
+   color: rgb(255, 255, 255);
+   font-size: 100px;
+   padding-top: 5px;
+}
+.score{
+   display: none;
+   color: white;
+   font-size: 100px;
+   padding-top: 5px;
+}
+
+.best_score{
+   margin-top: 30px;
+   text-align: center;
+   color: white;
+   font-size: 100px;
+   padding-top: 5px;
+}
+.game-section__container{
+   display: flex;
+   flex-direction: column;
+}
+.game-menu__btn{
+   color:white;
+   background-color: #350C23;
+   border: solid 2px white;
+   border-radius: 10px;
+   width: 300px;
+   height: 50px;
+   margin: 15px auto;
+   font-size: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.7s;
+}
+.game-menu__btn:hover{
+   background-color: rgba(255,255,255,0.3);
+   color: #350C23;
+   font-size: 32px;
+   transition: 0.2s;
+}
+.game-menu__title{
+   color: white;
+   font-style: 35px;
+   margin: auto;
+   margin-top: 50px;
+   margin-bottom: 40px;
+}
+.game-field{
+   margin: auto;
+   width: 1000px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.game-card{
+   width: 150px;
+   height: 200px;
+   background-color: #350C23;
+   background-image:url(/img/Рубашка.png);
+   background-size: cover;
+   margin: 15px;
+   border-radius: 20px;
+   transform: perspective(500px) rotateY(0deg);
+   transition: 0.5s;
+}
+.type1{
+   background-image: url(/img/Карточки/Вагаса\ card1.png);
+}
+.type2{
+   background-image: url(/img/Карточки/Катана\ card2.png);
+}
+.type3{
+   background-image: url(/img/Карточки/Кицунэ\ card3.png);
+}
+.type4{
+   background-image: url(/img/Карточки/Моти\ card4.png);
+}
+.type5{
+   background-image: url(/img/Карточки/Сямисэн\ card5.png);
+}
+.type6{
+   background-image: url(/img/Карточки/Фудзи\ card6.png);
+}
+.type7{
+   background-image: url(/img/Карточки/Фурин\ card7.png);
+}
+.type8{
+   background-image: url(/img/Карточки/Храм\ card8.png);
+}
+.flip{
+   background-color: rgb(255, 205, 170);
+   transform: perspective(100px) rotateY(-180deg);
+   transition: 0.5s;
+}
